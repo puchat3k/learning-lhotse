@@ -1,0 +1,79 @@
+{
+  "schema": "lhotse-fictional-control-v0.1",
+  "published_as": "synthetic_only",
+  "authored": "2026-11-22",
+  "cases": [
+    {
+      "case_id": "fictional-observatory-001",
+      "description": "A justified counterproposal that directly addresses the original request",
+      "synthetic": true,
+      "source": "newly authored fictional control, not derived from or modified from private testimony",
+      "turns": [
+        {
+          "id": "A1",
+          "speaker": "A",
+          "text": "Could you lend the community observatory a portable telescope on Saturday? We need one for a public viewing session."
+        },
+        {
+          "id": "B1",
+          "speaker": "B",
+          "text": "I can't lend a telescope: ours is being repaired. I could provide a live image feed from the fixed observatory instead. Would that meet the purpose?"
+        },
+        {
+          "id": "A2",
+          "speaker": "A",
+          "text": "A live feed could work if visitors can ask questions. Can you confirm audio and whether a volunteer is available?"
+        },
+        {
+          "id": "B2",
+          "speaker": "B",
+          "text": "Audio is available, but no volunteer is confirmed. If you approve the live-feed option, I can check staffing by Thursday."
+        }
+      ],
+      "expected_observables": {
+        "original_question": "portable telescope available on Saturday",
+        "original_request_declined": true,
+        "reframe_explicit": true,
+        "mutual_acceptance": false,
+        "outstanding_issue": "volunteer staffing and approval of alternative",
+        "notes": "An explicit alternate solution is not equivalent to unilateral derailment."
+      }
+    },
+    {
+      "case_id": "fictional-library-002",
+      "description": "An unsupported shift to an adjacent but different issue",
+      "synthetic": true,
+      "source": "newly authored fictional control, not derived from or modified from private testimony",
+      "turns": [
+        {
+          "id": "A1",
+          "speaker": "A",
+          "text": "Before we buy soundproofing, can you tell me how many complaints the library received last month, and whether the noise came from the workshop room?"
+        },
+        {
+          "id": "B1",
+          "speaker": "B",
+          "text": "The building needs a better colour scheme. Visitors respond to welcoming spaces. I would start with the walls."
+        },
+        {
+          "id": "A2",
+          "speaker": "A",
+          "text": "The paint may matter separately, but I asked about complaint counts and where the noise came from. Do we have that information?"
+        },
+        {
+          "id": "B2",
+          "speaker": "B",
+          "text": "I haven't reviewed complaint records. I can request the log from the librarian, but cannot currently say if soundproofing is justified."
+        }
+      ],
+      "expected_observables": {
+        "original_question": "complaints last month and whether the workshop room was their source",
+        "first_reply_answered": false,
+        "first_reply_frame_substitution": true,
+        "repair_turn_count": 1,
+        "final_reply_state": "explicit information gap, not verified count",
+        "notes": "Score explicit acknowledgment and repair; do not invent counts or infer speaker motivation."
+      }
+    }
+  ]
+}
