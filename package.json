@@ -1,0 +1,12 @@
+{
+  "name": "learning-lhotse",
+  "private": true,
+  "description": "Exploratory public research into dialogue context persistence and semantic integrity",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate-synthetic.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
